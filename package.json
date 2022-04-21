@@ -1,0 +1,80 @@
+{
+  "name": "testcafe-percy-hangs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "tsc --project tsconfig.json && DEBUG=* ts-node testcafe.ts"
+  },
+  "prettier": {
+    "bracketSpacing": true,
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none",
+    "importOrder": [
+      "reflect-metadata",
+      "^(.*)/lib/sequelize$",
+      "<THIRD_PARTY_MODULES>",
+      "^[./]"
+    ],
+    "importOrderSeparation": true,
+    "importOrderParserPlugins": [
+      "typescript",
+      "classProperties",
+      "decorators-legacy"
+    ]
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@percy/cli": "1.0.8",
+    "@percy/testcafe": "^1.0.1",
+    "crc": "^4.1.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "js-yaml": "^4.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.2",
+    "patch-package": "^6.4.7",
+    "pg": "^8.7.3",
+    "postinstall-postinstall": "^2.1.0",
+    "reflect-metadata": "^0.1.13",
+    "sanitize-filename": "^1.6.3",
+    "sequelize": "6.17",
+    "sequelize-fixtures": "^1.2.0",
+    "sequelize-typescript": "^2.1.3",
+    "sharp": "^0.30.3",
+    "testcafe": "1.18.5",
+    "testcafe-reporter-junit": "^3.0.2",
+    "testcafe-reporter-xunit": "^2.2.1",
+    "testcafe-vue-selectors": "^3.1.1",
+    "ts-command-line-args": "^2.2.1",
+    "ts-node": "^10.7.0",
+    "tsc-watch": "^5.0.3",
+    "tsconfig-paths": "^3.14.1",
+    "uuid": "^8.3.2",
+    "winston": "^3.7.2",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {
+    "@types/fluent-ffmpeg": "^2.1.20",
+    "@types/js-yaml": "^4.0.5",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/node": "^14",
+    "@types/sequelize": "^4.28.11",
+    "@types/sequelize-fixtures": "^0.6.3",
+    "@types/sharp": "^0.30.1",
+    "@types/tsc-watch": "^4.2.0",
+    "@types/uuid": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-testcafe-community": "^2.0.0",
+    "prettier": "^2.5.1",
+    "typescript": "4.6.2",
+    "wait-port": "^0.2.9"
+  },
+  "resolutions": {},
+  "engineStrict": true
+}

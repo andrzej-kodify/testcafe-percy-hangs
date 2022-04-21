@@ -1,0 +1,46 @@
+{
+  "ts-node": {
+    "files": true
+  },
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "es2016",
+    "module": "commonjs",
+    "allowJs": true,
+    "pretty": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "tests",
+      "tests/types.d.ts",
+      "node_modules/@types"
+    ],
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "lib": [
+      "es2019",
+      "DOM"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "composite": false,
+    "declaration": true,
+    "moduleResolution": "node",
+    "suppressImplicitAnyIndexErrors": true,
+    "baseUrl": "../",
+  },
+  "watchOptions": {
+    "excludeDirectories": ["**/node_modules", "**/dist"]
+  }
+}
